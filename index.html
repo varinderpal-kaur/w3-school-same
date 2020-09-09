@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+        integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+        crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="w3_open_nav('tutorials')">
+    <title>HTML Exercises</title>
+</head>
+
+<body>
+    <div class="darktheme">
+        <div class=" top">
+            <a class="w3schools-logo" href="#">
+                w3schools
+                <span class="dotcom">.com</span></a>
+            <div id="login" class="w3-right">
+                <a id="loginbtn" class="login w3-right" href="#">LOGIN</a>
+            </div>
+            <div id="container" class="w3-right text">
+                THE WORLD'S LARGEST WEB DEVELOPER SITE
+            </div>
+        </div>
+        <div class="w3-bar w3-theme w3-card-2 w3-wide">
+            <a class="w3-bar-item w3-button w3-white py-1 " href="#" target="w3_open()">
+                <i class="fa"></i>
+            </a>
+            <a class="w3-bar-item w3-button barex w3-white py-1" href="#" onclick="w3_open_nav('tutorials')"
+                id="navbtn_tutorials">TUTORIALS
+                <i class="fa fa-caret-down"></i>
+            </a>
+            <a class="w3-bar-item w3-button barex w3-white py-1" href="#">REFERENCES
+                <i class="fa fa-caret-down"></i>
+
+            </a>
+            <a class="w3-bar-item w3-button barex w3-white py-1" href="#">EXAMPLES
+                <i class="fa fa-caret-down"></i>
+
+            </a>
+            <a class="w3-bar-item w3-button barex w3-white py-1" href="#">EXPERIENCE
+                <i class="fa fa-caret-down"></i>
+
+            </a>
+            <a class="w3-bar-item w3-button barex w3-white py-1" href="#">CERTIFICATES</a>
+            <a class="w3-bar-item w3-button barex w3-white   py-1" href="#">SHOPS</a>
+
+
+            <div class="w3-right">
+                <a class="w3-bar-item w3-button py-1" href="#" onclick="open_search(this)" title="search w3schools">
+                    <i class="fas fa-search"></i>
+                </a>
+                <a class="w3-bar-item w3-button py-1" href="#" onclick="open_translate(this)"
+                    title="translate w3schools">
+                    <i class="fas fa-search"></i>
+                </a>
+                <a class="w3-bar-item w3-button py-1" href="#" onclick="changecodetheme(this)" title="toggle dark code">
+                    <i class="fas fa-search"></i>
+                </a>
+            </div>
+        </div>
+        <nav class="w3-sidebar w3-card-2 w3-white" id="mysidenav">
+            <div class="w3-bar-block">
+                <div class="w3-container-top">
+                    <h4 class="w3-margin-top">HTML AND CSS</h4>
+                </div>
+                <a class="w3-bar-item w3-button" href="#">Learn HTML</a>
+                <a class="w3-bar-item w3-button" href="#">Learn CSS</a>
+                <a class="w3-bar-item w3-button" href="#">Learn Bootstrap</a>
+                <a class="w3-bar-item w3-button" href="#">Learn W3.CSS</a>
+                <a class="w3-bar-item w3-button" href="#">Learn Colors</a>
+                <a class="w3-bar-item w3-button" href="#">Learn Icons</a>
+                <a class="w3-bar-item w3-button" href="#">Learn Graphics</a>
+                <a class="w3-bar-item w3-button" href="#">Learn How TO</a>
+                <a class="w3-bar-item w3-button" href="#">Learn Sass</a>
+                <div class="w3-container-top">
+                    <h4 class="w3-margin-top">JavaScript</h4>
+                </div>
+                <a class="w3-bar-item w3-button" href="#">Learn JavaScript</a>
+                <a class="w3-bar-item w3-button" href="#">Learn jQuery</a>
+                <a class="w3-bar-item w3-button" href="#">Learn React</a>
+                <a class="w3-bar-item w3-button" href="#">Learn AngularJS</a>
+                <a class="w3-bar-item w3-button" href="#">Learn JSON</a>
+                <a class="w3-bar-item w3-button" href="#">Learn AJAX</a>
+                <a class="w3-bar-item w3-button" href="#">Learn W3.JS</a>
+                <div class="w3-container">
+                    <h4 class="w3-margin-top">Server Side </h4>
+                </div>
+                <a class="w3-bar-item w3-button" href="#">Learn SQL</a>
+                <a class="w3-bar-item w3-button" href="#">Learn PHP</a>
+                <a class="w3-bar-item w3-button" href="#">Learn Asp</a>
+                <a class="w3-bar-item w3-button" href="#">Learn Node.JS</a>
+                <a class="w3-bar-item w3-button" href="#">Learn Raspberry</a>
+
+                <div class="w3-container-top">
+                    <h4 class="w3-margin-top">Programming</h4>
+                </div>
+                <a class="w3-bar-item w3-button" href="#">Learn Phython</a>
+                <a class="w3-bar-item w3-button" href="#">Learn Java</a>
+                <a class="w3-bar-item w3-button" href="#">Learn C++</a>
+                <a class="w3-bar-item w3-button" href="#">Learn C#</a>
+                <a class="w3-bar-item w3-button" href="#">Learn Machine Learning</a>
+
+                <div class="w3-container-top">
+                    <h4 class="w3-margin-top">Web Building</h4>
+                </div>
+                <a class="w3-bar-item w3-button" href="#">Web Statistics</a>
+                <a class="w3-bar-item w3-button" href="#">Web Certificates</a>
+                <a class="w3-bar-item w3-button" href="#">Wev Editor</a>
+                <a class="w3-bar-item w3-button" href="#">Web Developnment</a>
+                <a class="w3-bar-item w3-button" href="#">Test Your Typing Speed</a>
+
+                <div class="w3-container-top">
+                    <h4 class="w3-margin-top">XML Tutorials</h4>
+                </div>
+                <a class="w3-bar-item w3-button" href="#">Learn XML</a>
+                <a class="w3-bar-item w3-button" href="#">Learn XML AJAX</a>
+                <a class="w3-bar-item w3-button" href="#">Learn XML DOM</a>
+                <a class="w3-bar-item w3-button" href="#">Learn XML DTD</a>
+                <a class="w3-bar-item w3-button" href="#">Learn XML Schema</a>
+                <a class="w3-bar-item w3-button" href="#">Learn XSLT</a>
+                <a class="w3-bar-item w3-button" href="#">Learn XPath</a>
+                <a class="w3-bar-item w3-button" href="#">Learn XQuery</a>
+
+                <div class="w3-container-top">
+                    <h4 class="w3-margin-top">References</h4>
+                </div>
+                <a class="w3-bar-item w3-button" href="#">HTML Reference</a>
+                <a class="w3-bar-item w3-button" href="#">CSS Reference</a>
+                <a class="w3-bar-item w3-button" href="#">JS Reference</a>
+                <a class="w3-bar-item w3-button" href="#">SQL Reference</a>
+                <a class="w3-bar-item w3-button" href="#">PHP Reference</a>
+                <a class="w3-bar-item w3-button" href="#">jQuery Reference</a>
+                <a class="w3-bar-item w3-button" href="#">CSS Reference</a>
+                <a class="w3-bar-item w3-button" href="#">Phython Reference</a>
+
+                <div class="w3-container-top">
+                    <h4 class="w3-margin-top">Exercises</h4>
+                </div>
+                <a class="w3-bar-item w3-button" href="#">HTML Exercise</a>
+                <a class="w3-bar-item w3-button" href="#">CSS Exercise</a>
+                <a class="w3-bar-item w3-button" href="#">JavaScript Exercise</a>
+                <a class="w3-bar-item w3-button" href="#">SQL Exercise</a>
+                <a class="w3-bar-item w3-button" href="#">PHP Exercise</a>
+                <a class="w3-bar-item w3-button" href="#">Phython Exercise</a>
+                <a class="w3-bar-item w3-button" href="#">Java Exercise</a>
+                <a class="w3-bar-item w3-button" href="#">C++ Exercise</a>
+                <a class="w3-bar-item w3-button" href="#">C# Exercise</a>
+                <a class="w3-bar-item w3-button" href="#">Bootstrap Exercise</a>
+            </div>
+        </nav>
+        <!-- <div id="options" class="w3-card-2 w3-light-grey w3-center w3-hide-large">
+            <a href="#" class="w3-button w3-right w3-xlarge">x</a>
+            <br>
+            <div class="w3-container py-2">
+                <a class="w3-button w3-block w3-wide w3-large" href="#">TUTORIALS
+                    <i class="fa fa-caret-down"></i>
+                </a>
+                <div id="section_references" class="w3-white w3-show"></div>
+                <a class="w3-button w3-block w3-wide w3-large" href="#">REFERENCES
+                    <i class="fa fa-caret-down"></i>
+                </a>
+                <div id="section_examples" class="w3-white w3-show"></div>
+                <a class="w3-button w3-block w3-wide w3-large" href="#">EXAMPLES
+                    <i class="fa fa-caret-down"></i>
+                </a>
+                <div id="section_experiences" class="w3-white w3-show"></div>
+                <a class="w3-button w3-block w3-wide w3-large" href="#">EXPERIENCES
+                    <i class="fa fa-caret-down"></i>
+                </a>
+                <div id="section_tutorials" class="w3-white w3-show"></div>
+                <a class="w3-button w3-block w3-wide w3-large" href="#">CERTIFICATES</a>
+                <a class="w3-button w3-block w3-wide w3-large" href="#">SHOPS</a>
+            </div>
+        </div> -->
+        <!-- <nav id="nav_tutorials" class="w3-light-grey w3-card-2 w3-hide-small navex">
+            <span onclick="w3_open_nav('tutorials')" class="w3-button w3-xlarge w3-dispaly-topright barex">x</span>
+            <div class="w3-row-padding w3-bar-block">
+                <div class="w3-col">
+                    <h3 class="w3-margin-top">HTML and CSS</h3>
+                    <a class="w3-bar-item w3-button" href="#">Learn HTML</a>
+                    <a class="w3-bar-item w3-button" href="#">Learn css</a>
+                    <a class="w3-bar-item w3-button" href="#">Learn Bootstrap</a>
+                    <a class="w3-bar-item w3-button" href="#">Learn W3.CSS</a>
+                    <a class="w3-bar-item w3-button" href="#">Learn Colors</a>
+                    <div class="w3-hide-large w3-hide-small"></div>
+                    <h3>XML Tutorials</h3>
+                    <a class="w3-bar-item w3-button" href="#">Learn XML</a>
+                    <a class="w3-bar-item w3-button" href="#">Learn XML AJAX</a>
+                    <a class="w3-bar-item w3-button" href="#">Learn XML DOM</a>
+                    <a class="w3-bar-item w3-button" href="#">Learn XML DTD</a>
+                    <a class="w3-bar-item w3-button" href="#">Learn XML XSLT</a>
+                    <a class="w3-bar-item w3-button" href="#">Learn XML XPath</a>
+                    <a class="w3-bar-item w3-button" href="#">Learn XML XQuery</a>
+                </div>
+            </div>
+        </nav> -->
+        <!-- MAIN -->
+        <div class="w3-main" id="main">
+            <div class="w3-row w3-margin-bottom">
+                <div class="w3-col w3-center">
+                    <h1>HTML</h1>
+                    <p class="w3-xlarge w3-text-dark-grey">
+                        The Language for building web pages
+                    </p>
+                    <a href="#" class="w3-button w3-dark-grey">Learn HTML</a>
+                    <a href="#" class="w3-button w3-dark-grey">HTML REFERENCE</a>
+                </div>
+                <div class="w3-col">
+                    <div class="w3-hide-small w3-light-grey w3-card-2">
+                        <h3>HTML Example</h3>
+                        <div class="w3-code html coding w3-card-2">
+                            <span class="tagname ">
+                                <span class="tagcolor">
+                                    < </span>
+
+                                        !DOCTYPE
+                                        <span class="attributecolor">html</span>
+                                        <span class="tagcolor">
+                                            ></span>
+                                </span>
+                                <br>
+                                <span class="tagname">
+                                    <span class="tagcolor">
+                                        < </span>
+                                            html
+                                            <span class="tagcolor">
+                                                ></span>
+                                    </span>
+                                    <br>
+                                    <span class="tagname">
+                                        <span class="tagcolor">
+                                            < </span>
+                                                title
+                                                <span class="tagcolor">
+                                                    ></span>
+                                        </span>
+                                        "HTML Tutorials"
+                                        <span class="tagname">
+                                            <span class="tagcolor">
+                                                < </span>
+                                                    /title
+                                                    <span class="tagcolor">
+                                                        ></span>
+                                            </span>
+                                            <br>
+                                            <span class="tagname">
+                                                <span class="tagcolor">
+                                                    < </span>
+                                                        body
+                                                        <span class="tagcolor">
+                                                            ></span>
+                                                </span>
+                                                <br>
+                                                <span class="tagname">
+                                                    <span class="tagcolor">
+                                                        < </span>
+                                                            h1
+                                                            <span class="tagcolor">
+                                                                ></span>
+                                                    </span>
+                                                    This is a heading
+                                                    <span class="tagname">
+                                                        <span class="tagcolor">
+                                                            < </span>
+                                                                /h1
+                                                                <span class="tagcolor">
+                                                                    ></span>
+                                                        </span>
+                                                        <br>
+                                                        <span class="tagname">
+                                                            <span class="tagcolor">
+                                                                < </span>
+                                                                    p
+                                                                    <span class="tagcolor">
+                                                                        ></span>
+                                                            </span>
+                                                            This is a paragraph
+                                                            <span class="tagname">
+                                                                <span class="tagcolor">
+                                                                    < </span>
+                                                                        /p
+                                                                        <span class="tagcolor">
+                                                                            ></span>
+                                                                </span>
+                                                                <br>
+                                                                <span class="tagname">
+                                                                    <span class="tagcolor">
+                                                                        < </span>
+                                                                            /body
+                                                                            <span class="tagcolor">
+                                                                                ></span>
+                                                                    </span>
+                                                                    <br>
+                                                                    <span class="tagname">
+                                                                        <span class="tagcolor">
+                                                                            < </span>
+                                                                                /html
+                                                                                <span class="tagcolor">
+                                                                                    ></span>
+                                                                        </span>
+                        </div>
+                        <a href="#" target="_blank" class="w3-button w3-theme">
+                            Try it Yourself
+                        </a>
+                    </div>
+
+                    <div class="w3-row w3-margin-bottom">
+                        <div class="w3-col w3-center">
+                            <h1>CSS</h1>
+                            <p class="w3-xlarge w3-text-dark-grey">
+                                The Language for styling web pages
+                            </p>
+                            <a href="#" class="w3-button w3-dark-grey">Learn HTML</a>
+                            <a href="#" class="w3-button w3-dark-grey">HTML REFERENCE</a>
+                        </div>
+                        <div class="w3-hide-small w3-light-grey w3-card-2">
+                            <h3>CSS Example</h3>
+                            <div class="w3-code css coding w3-card-2">
+                                <span class="csscolor">body
+                                    <span class="csslimitcolor">{</span>
+                                    <span class="csspropertycolor">
+                                        <br>
+                                        &nbsp; background-color
+                                        <span class="csspropertycolor">:</span>
+                                        <span class="csspropertyvaluecolor">
+                                            <span class="csslimitcolor"></span>
+                                            lightblue
+                                            <span class="csslimitcolor">;</span>
+                                            <br>
+                                            <span class="csslimitcolor">}</span>
+                                            <br>
+                                            <br>
+                                            h1
+                                            <span class="csslimitcolor">{</span>
+                                            <span class="csspropertycolor">
+                                                <br>
+                                                &nbsp; color
+                                                <span class="csspropertycolor">:</span>
+                                                <span class="csspropertyvaluecolor">
+                                                    <span class="csslimitcolor"></span>
+                                                    white
+                                                    <span class="csslimitcolor">;</span>
+                                                    <br>
+                                                    &nbsp; text-align
+                                                    <span class="csspropertycolor">:</span>
+                                                    <span class="csspropertyvaluecolor">
+                                                        <span class="csslimitcolor"></span>
+                                                        center
+                                                        <span class="csslimitcolor">;</span>
+                                                        <br>
+                                                        <span class="csslimitcolor">}</span>
+                                                    </span>
+                                                    <br><br>
+                                                    p
+                                                    <span class="csslimitcolor">{</span>
+                                                    <span class="csspropertycolor">
+                                                        <br>
+                                                        &nbsp; font-family
+                                                        <span class="csspropertycolor">:</span>
+                                                        <span class="csspropertyvaluecolor">
+                                                            <span class="csslimitcolor"></span>
+                                                            verdana
+                                                            <span class="csslimitcolor">;</span>
+                                                            <br>
+                                                            &nbsp; font-size
+                                                            <span class="csspropertycolor">:</span>
+                                                            <span class="csspropertyvaluecolor">
+                                                                <span class="csslimitcolor"></span>
+                                                                20px
+                                                                <span class="csslimitcolor">;</span>
+                                                                <br>
+                                                                <span class="csslimitcolor">}</span>
+
+                                                            </span>
+                                                        </span>
+                            </div>
+                            <a href="#" target="_blank" class="w3-button w3-theme">
+                                Try it Yourself
+                            </a>
+                        </div>
+                        <div class="w3-row w3-margin-bottom">
+                            <div class="w3-col w3-center">
+                                <h1 class="w3-jumbo">JavaScript</h1>
+                                <p class="w3-xlarge w3-text-dark-grey">
+                                    The Language for styling web pages
+                                </p>
+                                <a href="#" class="w3-button w3-dark-grey">Learn JAVASCRIPT</a>
+                                <a href="#" class="w3-button w3-dark-grey">JAVASCRIPT REFERENCE</a>
+                            </div>
+                            <div class="w3-hide-small w3-light-grey w3-card-2">
+                                <h3>CSS Example</h3>
+                                <div class="w3-code css coding w3-card-2">
+                                    <div class="htmlhigh">
+                                        <span class="tagname ">
+                                            <span class="tagcolor">
+                                                < </span>
+
+                                                    button
+                                                    <span class="attributecolor">
+                                                        onclick
+                                                        <span class="attributevaluecolor">=myfunction()
+                                                        </span>
+                                                    </span>
+                                                    <span class="tagcolor">
+                                                        ></span>
+                                            </span>
+                                            click me
+                                            <span class="tagname">
+                                                <span class="tagcolor">
+                                                    < </span>
+                                                        button
+                                                        <span class="tagcolor">
+                                                            ></span>
+                                                </span>
+                                                <br><br>
+                                                <span class="tagname ">
+                                                    <span class="tagcolor">
+                                                        < </span>
+
+                                                            script
+
+                                                            <span class="tagcolor">
+                                                                ></span>
+                                                    </span>
+                                                    <span class="jscolor">
+                                                        <br>
+                                                        <span class="jskeywordscolor">function</span>
+                                                        myfunction(){
+                                                        <br>
+                                                        <span class="jsnumbercolor"></span>
+                                                        &nbsp;
+                                                        <span class="jskeywordscolor">var</span>
+                                                        x=document.
+
+                                                        <span class="jspropertycolor">getElementByID</span>
+                                                        (
+
+                                                        <span class="jsstringcolor">demo</span>
+                                                        ;
+                                                        <br>
+                                                    </span>
+                                                    <span class="jsnumbercolor"></span>
+                                                    &nbsp;x.
+                                                    <span class="jspropertycolor">style</span>
+                                                    .
+                                                    <span class="jspropertycolor">font-size</span>
+                                                    =
+                                                    <span class="jsstringcolor">"25px"</span>
+                                                    ;
+                                                    <br>
+                                                    <span class="jsnumbercolor"></span>
+                                                    &nbsp;x.
+                                                    <span class="jspropertycolor">style</span>
+                                                    .
+                                                    <span class="jspropertycolor">color</span>
+                                                    =
+                                                    <span class="jsstringcolor">"red"</span>
+                                                    ;
+                                                    <br>
+                                                    }
+                                                    <br>
+                                                </span>
+                                    </div>
+                                </div>
+                                <a href="#" target="_blank" class="w3-button w3-theme">
+                                    Try it Yourself
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w3-hide-small w3-light-grey w3-card-2">
+                        <h3>SQL Example</h3>
+                        <div class="w3-code css coding w3-card-2">
+                            <span class="sqlcolor">
+                                <span class="sqlkeywordcolor">SELECT</span>
+                                *
+                                <span class="sqlkeywordcolor">FROM</span>
+                                customers
+                                <br>
+                                <span class="sqlkeywordcolor">WHERE</span>
+                                country=
+                                <span class="sqlstringcolor">'Mexico'</span>
+                                ;
+                                <span class="sqlnumbercolor"></span>
+                            </span>
+                        </div>
+                        <a href="#" target="_blank" class="w3-button w3-theme">
+                            Try it Yourself
+                        </a>
+                    </div>
+
+
+                    <div class="w3-row w3-margin-bottom">
+                        <div class="w3-col w3-center">
+                            <h1>SQL</h1>
+                            <p class="w3-xlarge w3-text-dark-grey">
+                                The Language for accessing databases
+                            </p>
+                            <a href="#" class="w3-button w3-dark-grey">Learn SQL</a>
+                            <a href="#" class="w3-button w3-dark-grey">SQL REFERENCE</a>
+                        </div>
+
+</body>
+
+</html>
