@@ -106,12 +106,13 @@ div{
     vertical-align: middle;
     overflow: hidden;
     text-decoration: none;
-    color: inherit;
-    background-color: inherit;
+    /* color: inherit; */
+    /* background-color: inherit; */
     text-align: center;
     cursor: pointer;
+    white-space: nowrap;
 }
-.w3-button:hover{
+.w3-button:hover,.green:hover{
     background-color: #fff;
     color: black;
 }
@@ -131,8 +132,8 @@ a{
     font-size: 17px;
 }
 .w3-theme{
-    color: #fff !important;
-    background-color:#4CAF50;
+    color: #fff !important ;
+    background-color:#4CAF50 !important ;
 }
    
 .w3-card, 
@@ -162,7 +163,7 @@ a{
     color: #000 !important;
     background: #fff !important;
 }
-h1{
+h1,.w3-jumbo{
     font-size: 60px !important;
     color: #555555;
     margin: 2px 0 -20px 0;
@@ -246,6 +247,7 @@ h3{
     width: 100%;
     z-index: 4 !important;
 }
+
 .w3-row-padding{
     padding: 0 8px;
 }
@@ -258,6 +260,7 @@ h3{
 }
 .w3-col .w3-button{
     margin: 5px 5px 5px 0;
+    font-size: 16px;
 }
 .w3-display-topright{
     position: absolute;
@@ -282,7 +285,7 @@ p{
     background-color: #616161;
 }
 .w3-text-dark-grey{
-    color: #3a3a3a;
+    color: #3a3a3a !important;
 }
 .coding{
     border-color: #4CAF50 !important;
@@ -297,6 +300,10 @@ p{
     border-left: 4px solid #4CAF50;
     word-wrap: break-word;
 }
+.w3-code{
+    margin-top: 16px !important;
+    margin-left: 16px !important;
+}
 .tagname{
     color: brown;
 }
@@ -305,4 +312,41 @@ p{
 }
 .attributecolor{
     color: red;                                                                                                                                                                                                                                            
+}
+.attributevaluecolor{
+    color: mediumblue;
+}
+.csscolor{
+    color: brown;
+}
+.csslimitcolor{
+    color: black;
+}
+
+.csspropertycolor{
+    color: red;
+}
+.csspropertyvaluecolor{
+    color: mediumblue;
+}
+.jscolor{
+    color: black;
+}
+.jskeywordscolor{
+    color: mediumblue;
+}
+.jsnumbercolor{
+    color: red;
+}
+.jsstringcolor{
+    color: brown;
+}
+.sqlcolor{
+    color: black;
+}
+.sqlkeywordcolor{
+    color: mediumblue;
+}
+.sqlstringcolor{
+    color: brown;
 }

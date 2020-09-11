@@ -1,0 +1,4 @@
+.w3-row.w3-col{
+    display: flex;
+    flex-direction: row;
+}
