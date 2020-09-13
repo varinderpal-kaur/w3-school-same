@@ -1,0 +1,23 @@
+/* @media screen and (max-width:768px){
+.w3-sidebar.w3-collapse,.barex{
+    display: none;
+}
+}
+
+@media screen and (max-width:992px){
+    .w3-sidebar.w3-collapse{
+        display: none;
+    }
+    }
+     */
+@media(max-width:600px)
+         .w3-hide-small{
+             display: none !important;
+         }
+     
+/*      
+     @media(min-width:px){
+         .w3-hide-small{
+             display: none;
+         }
+     }      */
