@@ -46,8 +46,10 @@ a{
 .w3-wide{
     letter-spacing: 4px;
 }
-
-.top{
+.w3-container{
+    padding: 0.01em 16px;
+}
+/* .top{
     position: relative;
     background: #ffffff;
     height: 68px;
@@ -55,7 +57,7 @@ a{
     line-height: 50px;
     overflow: hidden;
     z-index: 2;
-}
+} */
 .text{
     margin-right: 20px;
 }
@@ -260,6 +262,9 @@ h3{
     background-color: #f1f1f1 !important;
 
 }
+.w3-left{
+    float: left !important;
+}
 .w3-center{
     text-align: center !important;
 }
@@ -435,4 +440,7 @@ img{
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
+}
+footer{
+    display: block;
 }
