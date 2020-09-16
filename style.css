@@ -118,8 +118,7 @@ div{
     margin-bottom: -155px;
 }
 
-
-.w3-button:hover,.green:hover{
+.w3-button:hover{
     background-color: #fff;
     color: black;
 }
@@ -132,6 +131,9 @@ a{
 
 .w3-wide{
     font-family: Arial, Helvetica, sans-serif;
+}
+.w3-wide{
+    letter-spacing: 4px;
 }
 .w3-bar{
     position: relative;
@@ -240,7 +242,17 @@ h3{
     outline: 0;
 
 }
-
+.green, .green:hover{
+    color: #fff !important;
+    background-color: #4CAF50 !important;
+}
+.w3-hover-shadow:hover{
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, ),
+    0 4px 20px 0 rgba(0, 0, 0, 0.19);
+}
+a:active,a:hover{
+    outline-width: 0;
+}
 .w3-bar-block
 .w3-bar-item{
      width: 100%;
@@ -441,6 +453,13 @@ img{
     left: 50%;
     transform: translate(-50%,-50%);
 }
-footer{
+footer,nav{
     display: block;
+}
+.w3-hover-text-green:hover{
+    color: #4CAF50 !important;
+}
+.w3-button:hover{
+    color: #000 !important;
+    background-color: #ccc !important;
 }
