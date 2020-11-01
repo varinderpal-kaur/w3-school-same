@@ -1,0 +1,298 @@
+*{
+    box-sizing: border-box;
+}  
+*:before{
+   box-sizing: border-box;
+}
+*:after{
+   box-sizing: border-box;
+}
+html,body{font-family:Verdana,sans-serif;font-size:15px;line-height:1.5}html{overflow-x:hidden}
+body{margin:0}
+h1{font-size:36px}h2{font-size:30px}h3{font-size:24px}h4{font-size:20px}h5{font-size:18px}h6{font-size:16px}.w3-serif{font-family:serif}
+h1,h2,h3,h4,h5,h6{font-family:"Segoe UI",Arial,sans-serif;font-weight:400;margin:10px 0}.w3-wide{letter-spacing:4px}
+/* W3Schools Font Logo */
+.w3schools-logo {
+font-family:fontawesome;
+text-decoration:none;
+line-height: 1;
+font-size:37px;
+letter-spacing:3px;
+color:#555555;
+display:block;
+position:relative;
+}
+.w3-right{
+    float: right!important;
+}
+.w3schools-logo .dotcom {color:#4CAF50;}
+
+.fa {
+display:inline-block;
+font:normal normal normal 14px/1 FontAwesome;
+font-size:20px;
+text-rendering:auto;
+transform:translate(0,0);
+}
+.login{
+    display: none;
+    line-height: 1.5;
+    padding: 6px 14px;
+    position: relative;
+    top: 5px;
+    color: #ffffff;
+    background: #4CAF50;
+    text-decoration: none;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Customize W3.CSS */
+#nav_tutorials,#nav_references,#nav_examples,#nav_exercises,#nav_login {
+display:none;
+padding-bottom:40px;
+position:absolute;
+width:100%;
+z-index:5 !important;
+}
+.w3-display-topright{
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+
+.w3-col .w3-button {
+margin:5px 5px 5px 5px;
+font-size:16px;
+}
+.w3-col.l4 .w3-card-2 {
+padding:15px 10px;
+height:260px;
+}
+.w3-theme {color:#fff !important;background-color:#4CAF50 !important;}
+.w3-main,#main{
+    transition-property: margin-left;
+    transition-duration: 0.4s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+}
+.w3-main {margin-left:230px;}
+.w3-sidebar {
+z-index:3;
+width:230px;
+overflow:hidden !important;
+position:absolute !important;
+margin-bottom:-155px;
+}
+.w3-sidebar .w3-bar-block .w3-bar-item{
+padding:0 16px;
+font-size:16px; 
+}
+.w3-bar {
+position:relative;
+z-index:4;
+font-size:17px;
+}
+.w3-wide {
+font-family:"Segoe UI",Arial,sans-serif;
+}
+h1 {
+font-size:80px;
+color:#555555;
+margin:2px 0 -20px 0 !important;
+}
+.certoverlay {
+  position:absolute;
+  top:0;
+  background-color:rgba(0, 0, 0, 0.5);
+  width:100%;
+  text-align:center;
+  padding:15px
+}
+.certoverlay h2 {
+  margin:10px 0 0 0;
+  font-size:36px;
+}
+.certoverlay h3 {
+  margin:0 0 10px 0;
+}
+.tagcolor{color:rgb(71, 71, 163)}
+.tagnamecolor{color:brown}
+.attributecolor{color:red}
+.attributevaluecolor{color:mediumblue}
+.cssselectorcolor{color:brown}
+.csspropertycolor{color:red}
+.csspropertyvaluecolor{color:mediumblue}
+.cssdelimitercolor{color:black}
+.cssimportantcolor{color:red}  
+.jscolor{color:black}
+.jskeywordcolor{color:mediumblue}
+.jsstringcolor{color:brown}
+.jsnumbercolor{color:red}
+.jspropertycolor{color:black}
+.sqlcolor{color:black}
+.sqlkeywordcolor{color:rgb(154, 154, 244)}
+.sqlstringcolor{color:brown}
+
+.w3-padding{
+    padding: 8px 16px !important;
+}
+
+.w3-hover-greener:hover {
+  background-color:#46a049
+}
+a{background-color:transparent}a:active,a:hover{outline-width:0}
+.w3-btn,.w3-button{border:none; 
+    display:inline-block;
+    padding:8px 8px;
+    vertical-align:middle;
+    overflow:hidden;
+    text-decoration:none;
+    color:inherit;
+    background-color:inherit;
+    text-align:center;
+    cursor:pointer;
+    white-space:nowrap}
+    .w3-btn{border:none; 
+        display:inline-block;
+        padding:8px 12px;
+        vertical-align:middle;
+        overflow:hidden;
+        text-decoration:none;
+        color:inherit;
+        background-color:inherit;
+        text-align:center;
+        cursor:pointer;
+        white-space:nowrap}
+.w3-btn
+    strong{font-weight:bolder}
+   
+    .w3-card{box-shadow:0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)}
+    .w3-button:hover{color:#000!important;background-color:#ccc!important}
+    .w3-green{color:#fff!important;background-color:#4CAF50!important}
+    .w3-gwhite,.w3-hover-white:hover{color:#000!important;background-color:#fff!important}
+
+.w3-dark-grey,.w3-hover-dark-grey:hover{
+    color:#fff!important;background-color:#616161!important}
+.w3-border-green,.w3-hover-border-green:hover{border-color:#4CAF50!important}
+footer,main,nav{display:block}
+.w3-bar{width:100%;overflow:hidden}.w3-center .w3-bar{display:inline-block;width:auto}
+.w3-bar .w3-bar-item{padding:8px 16px;float:left;width:auto;border:none;display:block;outline:0}
+.w3-bar .w3-button{white-space:normal}
+.w3-bar-block .w3-bar-item{width:100%;display:block;padding:8px 16px;text-align:left;
+    border:none;white-space:normal;float:none;outline:0}
+.w3-bar-block.w3-center .w3-bar-item{text-align:center}
+.w3-block{display:block}
+.w3-sidebar{height:100%;width:200px;background-color:#fff;z-index:1;overflow:auto}
+.w3-container:before, .w3-container:after,
+.w3-row-padding:after, .w3-row-padding:before,
+.w3-row:after,.w3-row:before{
+    content: "";
+    display: table;
+    clear: both;
+}
+.w3-display-container{
+    position: relative;
+}
+
+img{
+    vertical-align: middle;
+}
+img{
+    border-style: none;
+}
+.certoverlay{
+    position: absolute;
+    top: 0;
+    background-color:rgba(0, 0,0 ,0.5) ;
+    width: 100%;
+    text-align: center;
+    padding: 15px;
+}
+.w3-padding-large{
+    padding: 12px 24px !important ;
+}
+.w3-padding-48{
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
+}
+.w3-row-padding,
+.w3-row-padding>.w3-col{
+    padding: 0 8px;
+}
+.w3-content{
+    max-width: 980px;
+}
+.w3-content{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.w3-green{
+    color: #fff !important;
+    background-color: #4CAF50 !important;
+}
+
+.w3-margin-bottom{
+    margin-bottom: 16px !important;
+}
+.w3-center{
+    text-align: center !important;
+}
+p{
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.w3-text-dark-grey{
+    color: #3a3a3a !important;
+}
+.coding{
+    border-color: #4CAF50 !important;
+}
+.w3-code{
+    font-family: 'Inconsolata',;
+    font-size: 16px;
+    margin-left: 20px;
+    width: auto;
+    background-color: #fff;
+    padding: 8px 12px;
+    border-left: 4px solid #4CAF50;
+    word-wrap: break-word;
+}
+.w3-code{
+    margin-top: 16px !important;
+    margin-left: 16px !important;
+    margin-right: 16px !important;
+}
+#nav_tutorials,#nav_references,#nav_examples,#nav_exercises,#nav_login {
+    display:none;
+    padding-bottom:40px;
+    position:absolute;
+    width:100%;
+    z-index:5 !important;
+    }
+    footer,header,main,menu,nav,section{display:block}
+    .w3-show{
+        display: block !important;
+    }
+  
+   .w3-light-grey{
+       color: #000 !important;
+       background-color: #f1f1f1 !important;
+   }
+   .w3-xlarge{
+       font-size: 24px !important;
+   }
+   .w3-padding-32{
+       padding-top: 32px !important;
+       padding-bottom: 32px !important;
+   }
+   .w3-container{
+padding: 0.01em 16px;
+   }
+   

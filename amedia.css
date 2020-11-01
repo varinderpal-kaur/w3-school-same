@@ -1,0 +1,38 @@
+@media screen and (min-width:700px){
+    .w3schools-logo{
+        font-size: 30px;
+    }
+}
+@media screen and (min-width:700px){
+    .login{
+        top: 30px;
+    }
+}
+/* main */
+@media (max-width:992px){
+    .w3-sidebar .w3-collapse{
+        display: block !important;
+    }
+}
+@media (max-width:992px){
+    .w3-main{
+        margin-left:0!important;
+        margin-right:0!important;
+    }
+}  
+@media screen and (min-width:769px){
+    .w3-main{
+        margin-left:230px !important;
+    }
+    .w3-bar-block .w3-button{
+        padding:0;
+    }
+}
+@media screen and (min-width:769px){.w3-sidebar.w3-collapse{display:block !important;}}
+@media screen and (min-width:769px){#myAccordion,.hidesm{display:none !important;}}
+@media screen and (min-width:769px){.w3-main{margin-left:230px !important;}.w3-bar-block .w3-button{padding:0;}}
+@media screen and (max-width:768px){.w3-sidebar.w3-collapse,.barex,.navex{display:none !important;}.w3-bar-block .w3-bar-item{text-align:center !important;padding:2px 0;}h1,.w3-jumbo{font-size:60px !important;}}
+@media screen and (max-width:545px){.certoverlay{padding:10px;height:100%;}.certoverlay h3{font-size:15px;}}
+@media screen and (max-width:380px){.getcert{position:absolute;text-align:center;left:50%;bottom:50%;font-size:13px;}}
+@media only screen and (max-device-width: 1366px){.w3-hide-device{display:none;}}
+@media (min-width:993px){.w3-col.l6{width:49.99999%}}
